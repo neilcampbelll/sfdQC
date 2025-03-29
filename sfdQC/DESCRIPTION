@@ -1,12 +1,11 @@
 Package: sfdQC
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Title: Quality Control for Fisheries VMS Data
+Version: 0.1.0
+Authors@R: person('Neil', 'Campbell', email = 'neil.campbell@ices.dk', role = c('aut', 'cre'))
+Description: Functions for quality assessment and control of ICES VMS data. Function
+    documentation was developed with assistance from Anthropic's Claude 3.7 Sonnet AI assistant.
+License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Imports: dplyr, ggplot2, tidyr, stringr, lubridate, DT
