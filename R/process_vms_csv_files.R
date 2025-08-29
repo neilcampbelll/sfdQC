@@ -24,13 +24,6 @@ process_vms_csv_files <- function(data_dir = "C:/Work/Spatial_Data/ICES_VMS_QC/d
                                   pattern_le = "ICES_LE_.*\\.csv$",
                                   pattern_ve = "ICES_VE_.*\\.csv$") {
 
-  library(dplyr)
-  library(readr)
-  library(lubridate)
-  library(purrr)
-  library(ggplot2)
-  library(tidyr)
-  library(stringr)
 
   cat("Starting VMS CSV file processing...\n")
 

@@ -11,12 +11,13 @@
 #'
 #' @return The path to the rendered HTML report.
 #'
+#' @importFrom rmarkdown render
 #' @export
 render_vms_qc_report <- function(data, output_file = "vms_qc_report.html", 
                                  template_path = NULL) {
   # If no template is provided, use the one bundled with the package
   if (is.null(template_path)) {
-    template_path <- system.file("rmd", "vms_qc_report.Rmd", package = "yourpackage")
+    template_path <- system.file("rmd", "Aggregated_VMS_QC.Rmd", package = "sfdQC")
   }
   
   # Save the data temporarily for the report to use

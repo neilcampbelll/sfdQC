@@ -47,6 +47,7 @@
 #' result <- check_unique_ids(vms_data)
 #' print(result)
 #'
+#' @importFrom dplyr group_by filter summarise arrange %>%
 #' @export
 check_unique_ids <- function(data) {
   total_rows <- nrow(data)
